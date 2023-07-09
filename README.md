@@ -11,6 +11,7 @@ API ключ для доступа к REST сервису Tegro.money можно
 Все взаимодействие с API происходит через ```APIClient```. Для начала работы нужно инициализировать его с апи параметрами вашего проекта:
 
 ```
+from api_client import APIClient
 client = APIClient(
     api_key="WzR7IcjWDkIgBco7", shop_id="A77C266B1D9953AA863D3FBEF4B1D64F"
 )

@@ -38,6 +38,3 @@ class APIClient():
         if nonce == None:
             nonce = int(time.time())
         return self._send_http_request(api_method, {"nonce": nonce, **params})
-
-client = APIClient(api_key="WzR7IcjWDkIgBco7", shop_id="A77C266B1D9953AA863D3FBEF4B1D64F")
-print(client.api_call("balance", {}))
